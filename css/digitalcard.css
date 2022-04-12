@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    max-width: 460px;
+  overflow: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+.container-fluid{
+    width: 100%;
+    overflow: auto;
+}
+.cardcontent{
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid rgb(247, 241, 241);
+    border-top: none;
+    box-shadow: 0px 6px 20px     rgb(218, 213, 213);
+    transform-style: preserve-3d;
+    margin: 0 0 15px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Open Sans', sans-serif;
+    
+}
+.row{
+    overflow: auto;
+    clear: both;
+}
+.cardcontent::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #d1b54b;
+  
+
+}
+.cardcontent::after{
+       content: '';
+    position: absolute;
+    width:60%;
+    height: 120px;
+    margin: auto;
+    background-color: #3c3d41;
+    position: absolute;
+    top: -4%;
+    left: 21%;
+    border-radius: 0 0 40px 40px;
+    transform: perspective(350px) rotateX(-65deg);
+    box-shadow: 0 22px 18px 0 #dbdbe8;
+}
+.information::before,.information::after{
+    content: '';
+
+    width: 30px;
+    height: 40%;
+    background-color: #d1b54b;
+    box-shadow: 0 22px 18px 0 #dbdbe8;
+    position:absolute;
+
+
+}
+.information::before{
+    border-radius: 0 40px 40px 0;
+    transform: perspective(350px) rotatey(25deg);
+    top: 10%;
+
+
+
+}
+.information::after{
+    border-radius: 40px 0px 0px 40px;
+    transform: perspective(350px) rotatey(-25deg);
+   
+    top: 10%;
+    left:94%;
+
+}
+
+/* heading section :start */
+.heading{
+    padding: 50px 0 150px 0;
+    background-color: #3c3d41;
+text-align: center;
+}
+.heading img{
+    width: 170px;
+    height: 60px;
+    border: 10px solid #d1b54b;
+    background-color: #ffffff;
+
+}
+.heading h1{
+    margin: 10px 0px;
+    color: #f8ffff;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.heading h1::before{
+    content: '';
+    position: absolute;
+    width: 9% ;
+    top: 217px;
+    left: 45%;
+    border-bottom: 2px solid #d1b54b;
+}
+.heading h5{
+    color: #f8ffff;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+/* heading section :END */
+/* information section start */
+.information{
+    overflow: auto;
+    padding: 110px 0 20px 0;
+}
+.informationdiv{
+text-align: center;
+box-sizing: border-box;
+
+}
+
+.informationdiv::before{
+    content: '';
+    position: absolute;
+width: 40%;
+margin: auto;
+height: 2px;
+left: 30%;
+background-color: #d1b54b;
+
+}
+.infologo{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin: auto;
+background-color: #d1b54b;
+position: relative;
+top: -20px;
+text-align: center;
+}
+.infologo i{
+color:#ffffff;
+vertical-align: middle;
+line-height: 40px;
+}
+.informationdiv p{
+font-weight:500;
+font-size: 20px;
+margin: 0 0 40px 0;
+}
+.contact{
+margin-bottom: 20px;
+}
+.contactno{
+border-radius: 5px;
+margin: 10px 20px;
+overflow: auto;
+}
+.contactno input{
+border: none;
+box-sizing: border-box;
+width:50%;
+padding: 10px;
+border: 1px solid lightgray;
+font-size: 18px;
+font-weight: 300;
+border-radius: 5px 0px 0px 5px;
+
+float: left;
+}
+
+.whatsupsbutton,.addbutton{
+border:none;
+color: #ffffff;
+padding: 10px;
+box-sizing: border-box;
+width: 50%;
+font-size: 18px;
+font-weight: 100;
+float: left;
+}
+.whatsupsbutton{
+    background-color: #198754;
+border-radius: 0px 5px 5px 0px;
+
+
+}
+.addbutton{
+border: 1px solid grey;
+border-radius: 5px;
+color: grey;
+
+}
+.addbutton i{
+    margin: 0px 10px;
+
+}
+.whatsupsbutton i{
+    margin: 0 3px 0 0;
+}
+
+.socialmediasection{
+
+display: flex;
+flex-direction: row;
+justify-content: right;
+}
+.socialmediasection p{
+font-size: 18px;
+font-weight: 400;
+vertical-align: middle;
+line-height: 50px;
+}
+
+
+.socialmediaicon{
+width: 50px;
+border-radius: 50%;
+float: left;
+text-align: center;
+vertical-align:middle;
+line-height: 50px;
+margin: 0px 10px;
+}
+.facebookicon{
+font-size: 50px;
+color:#4B66A0;
+}
+.instaicon{
+font-size: 30px;
+background-color:  #cf3239;
+color:#ffffff;
+}
+/* information section end */
+/* about section :start */
+.aboutus{
+    box-sizing: border-box;
+    overflow: auto;
+    
+}
+.aboutusline{
+    width: 100%;
+    height: 2px;
+    background-color: #d1b54b;
+    margin: 10px 0px 30px 0px;
+}
+.comapanydetails{
+    overflow: auto;
+    text-align: justify;
+}
+.comapanydetails p{
+    font-size: 22px;
+    color:#3c3d41;
+    line-height: 1.5;
+}
+.comapanydetails h4{
+    font-size: 22px;
+    line-height: 1.5;
+}
+/* about section end */
+/* footer section */
+nav{
+width: 100%;
+    border-top: 1px solid grey;
+    overflow-x:scroll;
+    bottom: 0px;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    padding: 20px 0;
+}
+.footericon{
+    margin: 0px 90px;
+    text-align: center;
+}
+.footericon a{
+    text-decoration: none;
+}
+
+.footericon i{
+    color: #d1b54b;
+    font-size: 30px;
+}
+.footericon p{
+font-size: 15px;
+font-weight: 600;
+    color: #3c3d41;
+}
+
+
+
+
